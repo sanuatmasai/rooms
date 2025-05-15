@@ -8,6 +8,13 @@ module.exports = {
         },
       });
 
+      webpackConfig.optimization.minimize = false;
+      webpackConfig.optimization.splitChunks = {
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 70000,
+      };
+
       return webpackConfig;
     },
   },
