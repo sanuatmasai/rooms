@@ -3,7 +3,12 @@
     "builds": [
       {
         "src": "package.json",
-        "use": "@vercel/static-build"
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build",
+          "buildCommand": "npm run build",
+          "outputDirectory": "build"
+        }
       }
     ],
     "routes": [
@@ -29,6 +34,8 @@
       }
     ],
     "env": {
+      "CI": false,
+      "NODE_ENV": "production",
       "REACT_APP_API_URL": "https://roomloop-server.onrender.com/api",
       "REACT_APP_SOCKET_URL": "https://roomloop-server.onrender.com"
     }
