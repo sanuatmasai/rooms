@@ -8,6 +8,7 @@ A modern React-based platform for virtual events, meetings, and social gathering
 
 ## Features
 
+
 - **Live and Scheduled Rooms**: Create and join rooms that are live or scheduled for the future
 - **Private and Public Rooms**: Host public events or create private rooms with invite-only access
 - **Dashboard View**: Grid-based dashboard with pagination and filtering (live, upcoming, past)
