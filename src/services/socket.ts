@@ -1,6 +1,6 @@
 import { io, Socket } from "socket.io-client";
 
-const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || "http://localhost:5000";
+const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || "https://roomloop-server.onrender.com/api";
 
 let socket: Socket | null = null;
 // Track joined rooms to prevent duplicate joins
