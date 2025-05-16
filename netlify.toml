@@ -2,9 +2,6 @@
   base = ""
   publish = "build"
   command = "CI=false npm run build"
-  environment = {
-    CI = false
-  }
 
 [dev]
   command = "npm start"
